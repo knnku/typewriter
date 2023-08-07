@@ -8,6 +8,8 @@ function printCount(){
   process.stdout.write(sentence[count]);
   count++;
 
+
+  //Stop interval when reaching sentence max length and print new line.
   if (count >= sentence.length) {
     console.log("\n");
     clearInterval(timer);
